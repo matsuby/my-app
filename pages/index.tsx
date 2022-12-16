@@ -1,5 +1,5 @@
 import NextLink from "next/link";
-import { Heading, Link, VStack } from "@chakra-ui/react";
+import { Heading, HStack, Link, VStack } from "@chakra-ui/react";
 
 export default function IndexPage() {
   return (
@@ -11,6 +11,14 @@ export default function IndexPage() {
       <Link as={NextLink} href="/grid">
         Grid Layout
       </Link>
+      <HStack>
+        <Link as={NextLink} href="/airbnb">
+          Trace Airbnb
+        </Link>
+        <Link href="https://www.airbnb.jp/" target="_blank">
+          (airbnb.jp)
+        </Link>
+      </HStack>
     </VStack>
   );
 }
